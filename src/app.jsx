@@ -17,9 +17,11 @@ export default function App(props) {
   let URLNew = new URL(window.location);
 
   useEffect(() => {
-    if (URLtoQuery) {
-      window.location.href = URLtoQuery;
-    }
+    setTimeout(() => {
+      if (URLtoQuery) {
+        window.location.href = URLtoQuery;
+      }
+    }, 1000);
     // eslint-disable-next-line
   }, []);
 
