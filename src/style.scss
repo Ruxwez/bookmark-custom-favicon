@@ -1,0 +1,61 @@
+@import url("https://cdn.jsdelivr.net/gh/Pxidev/OpenCDN@main/css/init/index.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Site_Main {
+  width: 100%;
+  height: 100vh;
+  background: #3498db;
+  .Container {
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form {
+      width: 500px;
+      min-height: 320px;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 20px;
+      h1{
+          margin: 0;
+          text-align: center;
+          color: white;
+      }
+      input {
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        padding: 0 20px;
+        outline: none;
+        font-size: 16px;
+        color: #34495e;
+        &::placeholder{
+            color: #2c3e50;
+        }
+        &:last-of-type{
+            margin-bottom: 10px;
+        }
+
+      }
+    }
+  }
+}
